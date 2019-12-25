@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+:root {
+    --current-grid-size: 400px;
+}
+
+body {
+  background-color: red;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+  color: yellow;
+  font-size: 1.5rem
+}
+
+button {
+  height: 120px;
+  width: 120px;
+  border-radius: 60%;
+  display: inline-block;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 200;
+  font-family: monospace;
+  border: 0.5rem solid;
+  border-color: black;
+  outline: none;
+}
+
+button:hover {
+  background: grey;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    margin: 0 auto;
+    width: var(--current-grid-size);
+    height: var(--current-grid-size);
+    border: 20px solid black;
+    border-radius: 25px;
+    background-color: grey;
+}
+
+.cell {
+    border: 1px;
+}
+
+.squares {
+    background-color: rgb(255, 255, 255);
+}
